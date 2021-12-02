@@ -1,0 +1,11 @@
+<div class = "contenido">
+    <p *ngIf="ciudadService.ciudad!=null">
+        Nombre de la ciudad: {{ciudadService.ciudad.nombre}}<br>
+        Pais de la ciudad: {{ciudadService.ciudad.pais}}<br>
+        Codigo de la ciudad: {{ciudadService.ciudad.codigo}}<br>
+    </p>
+    <p *ngIf="parametro!=null">
+    El código introducido es: {{parametro}}
+    </p>    
+</div>
+
