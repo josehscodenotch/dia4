@@ -1,11 +1,49 @@
-<div class = "contenido">
-    <p *ngIf="ciudadService.ciudad!=null">
-        Nombre de la ciudad: {{ciudadService.ciudad.nombre}}<br>
-        Pais de la ciudad: {{ciudadService.ciudad.pais}}<br>
-        Codigo de la ciudad: {{ciudadService.ciudad.codigo}}<br>
-    </p>
-    <p *ngIf="parametro!=null">
-    El código introducido es: {{parametro}}
-    </p>    
+<div class = "contenedor">
+    <div *ngIf="ciudadService.ciudad!=null">
+    <div class = "main">
+    <div>
+        <div class="col-md">
+        <table class="table table-borderedless">
+            <tbody>
+            <tr>
+                <td colspan="2" align="center"><h3> Mostrar Ciudad</h3><br></td>
+            <tr>
+            <tr>
+                <th scope="row" class="table-active">Nombre de la ciudad</th>
+                <td class="table-primary">{{ciudadService.ciudad.nombre}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Pais de la ciudad</th>
+                <td class="table-info">{{ciudadService.ciudad.pais}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="table-active">Código de la ciudad</th>
+                <td class="table-primary">{{ciudadService.ciudad.codigo}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="d-grid gap-2">
+            <button type="button" 
+                    class="btn btn-outline-primary"
+                    (click) = "irFormulario()">
+                    Ir a Formulario
+            </button>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
 </div>
+
+
+
+
+
+
+
+
+<!-- <p *ngIf="parametro!=null">
+El código introducido es: {{parametro}}
+</p>     -->
+
 

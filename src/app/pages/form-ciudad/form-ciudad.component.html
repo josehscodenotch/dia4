@@ -1,9 +1,37 @@
-<div class = "contenido">
-Nombre Ciudad: <input type="text"  #ciudad/> <br>
-Nombre Pais: <input type="text" #pais/> <br>
-Codigo Ciudad: <input type="text"  #codigo/> <br>
-
-<button (click)= "nuevaCiudad(ciudad.value, pais.value, codigo.value)">Guardar Ciudad</button>
+<div class = "contenedor">
+    <div class = "main">
+        <div>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h3> Insertar una ciudad</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nombre Ciudad</th>
+                        <td><input type="text" #ciudad/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nombre Pais</th>
+                        <td><input type="text" #pais/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Código Ciudad</th>
+                        <td><input type="text"  #codigo/></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-grid gap-2">
+                <button type="button" 
+                        class="btn btn-outline-primary"
+                        (click) = "nuevaCiudad(ciudad.value, pais.value, codigo.value)">
+                        Guardar Ciudad
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 

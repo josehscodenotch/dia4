@@ -1,4 +1,19 @@
-.contenido 
+.contenedor   
 {
     padding-top: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black; 
+    border-radius: 5px;
 }
